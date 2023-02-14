@@ -18,7 +18,7 @@ function App() {
       const max = greetings.length - 1;
       const rand = min + Math.random() * (max - min);
       setChangeIndex(Math.round(rand));
-    }, 5000);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
