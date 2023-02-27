@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ChildComponent from "./sesion/ChildComponent";
-import SecondChildComponent from "./sesion/SecondChildComponent";
+import SelectorComponent from "./mesa/SelectorComponent";
+import PokemonCards from "./mesa/PokemonCards";
 
 // class App extends React.Component {
 
@@ -18,9 +18,16 @@ import SecondChildComponent from "./sesion/SecondChildComponent";
 
 export const App = () => {
   return (
-    <div className="abuelo">
-      <h2>Componente Abuelo:</h2>
-      <ChildComponent type="air" />
+    <div
+      className="abuelo"
+      style={{
+        margin: "1rem",
+        padding: "1rem",
+        fontFamily:"Helvetica, Roboto, Arial, sans-serif"}}>
+      <PokemonCards type="water" />
+      <PokemonCards type="fire" />
+      <PokemonCards type="air" />
+      <PokemonCards type="electric" />
     </div>
   )
 }
