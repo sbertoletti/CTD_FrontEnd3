@@ -21,7 +21,7 @@
 // 3er Modo - Funcion
 
 import React from "react"
-import PrimeraCapa from "./primeraCapa";
+import { PrimeraCapa } from "./primeraCapa";
 
 export const App = () => { // exportacion de forma nombrada (cuando lo importo no lo puedo renombrar)
 
